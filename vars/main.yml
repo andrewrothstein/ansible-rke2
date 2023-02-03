@@ -1,0 +1,9 @@
+---
+# vars file for rke2
+rke2_os: '{{ ansible_system | lower }}'
+rke2_arch: '{{ rke2_arch_map[ansible_architecture] }}'
+rke2_platform: '{{ rke2_os }}-{{ rke2_arch }}'
+rke2_url: '{{ rke2_mirror }}/{{ rke2_ver | urlencode }}/rke2.{{ rke2_platform }}{{ rke2_dotexe | default("") }}'
+rke2_exe: '{{ rke2_install_dir }}/rke2.{{ rke2_platform }}-{{ rke2_ver }}{{ rke2_dotexe | default("") }}'
+rke2_link: '{{ rke2_install_dir }}/rke2'
+rke2_checksum: '{{ rke2_checksums[rke2_ver][rke2_platform] }}'

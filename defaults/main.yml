@@ -1,0 +1,58 @@
+---
+# defaults file for rke
+rke2_ver: v1.26.1+rke2r1
+rke2_mirror: https://github.com/rancher/rke2/releases/download
+rke2_arch_map:
+  s390x: s390x
+  x86_64: amd64
+rke2_install_dir: /usr/local/bin
+rke2_checksums:
+  'v1.21.14+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.21.14%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:21705ac6e28bfcb1538ed5e9c00cb5fb5f5800d0fe58c1fca354fb04af8c9e40
+    # https://github.com/rancher/rke2/releases/download/v1.21.14%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:e1aa4058c344de13c7329847d199aea554faee47fde37e148122fe0cefa35316
+    # https://github.com/rancher/rke2/releases/download/v1.21.14%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:473ecc2fec09dbf13c064aa7e1c6cc2d80b73588368d43335d59a1855881f927
+  'v1.22.17+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.22.17%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:8354750b0fcd0e34947bdd1d7066cebb5844719eb70ec5b82f7b3f9355fe78cc
+    # https://github.com/rancher/rke2/releases/download/v1.22.17%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:362f05f73a7b6d9dd8e70290e6e5ee227ea9569cd7190621faf87bc9d6708f11
+    # https://github.com/rancher/rke2/releases/download/v1.22.17%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:0fbe4ebc235a62e750e394bda86bccaf545b77e1335268f4270b16842137ef96
+  'v1.23.16+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.23.16%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:053374376b185f526df567107c8982345364c25e48ab3c4ba0354ac78777af77
+    # https://github.com/rancher/rke2/releases/download/v1.23.16%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:6ec51b6ea4caf2c9c1a2cc8b9105552e928ca1533f793e7397fb0d57a8349b15
+    # https://github.com/rancher/rke2/releases/download/v1.23.16%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:f88d775e8c874f598d41fc30bb96d54d7759b4503e54d5126b6fb1f9f9d01776
+  'v1.24.9+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:58c2df5871347f98ff376295fc14f007d6fb58da502dffe60af54ea6f8e47863
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:90dbba51eb14ecd5ad76d8aa802c403e4a39cd25e8050ae549092a361552c112
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:80972f5fc3743fc937b0d0d05930962749b95eee7129bcb344115e99c68d33d8
+  'v1.24.9+rke2r2':
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r2/rke2.linux-amd64
+    linux-amd64: sha256:d90d4a38d3af12f48fe9d9333fcab70014bde9e434486021774437cf7b3636e1
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r2/rke2.windows-amd64.exe
+    windows-amd64: sha256:22b8fd700da337da57ec8321a87299a4eadf6c1c5d6a1247d4533b3a10b07bf1
+    # https://github.com/rancher/rke2/releases/download/v1.24.9%2Brke2r2/rke2.linux-s390x
+    linux-s390x: sha256:cfb15b8b79114e39cd3ce4a031f96ed3ee473d0c86248824a58160de8d6a81b4
+  'v1.25.6+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.25.6%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:48c8fdd1096e723b9003fee6cb56f05c71599c29f250fcd35ce0f9a45c2cd3cc
+    # https://github.com/rancher/rke2/releases/download/v1.25.6%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:1fc77359ab23e37e32d163cc5fee7a13131e7e85263c8f0f1849d43c7216e184
+    # https://github.com/rancher/rke2/releases/download/v1.25.6%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:637f30766779855e31f42c4aed525932e22bebf88306d4282016ea5ce629ca7c
+  'v1.26.1+rke2r1':
+    # https://github.com/rancher/rke2/releases/download/v1.26.1%2Brke2r1/rke2.linux-amd64
+    linux-amd64: sha256:caffd25ed558c4e2e3251f58f5aff3676e9bb02b11e18662ce8227eb1de09f49
+    # https://github.com/rancher/rke2/releases/download/v1.26.1%2Brke2r1/rke2.windows-amd64.exe
+    windows-amd64: sha256:df8f1c007d1e46ad303586c41b3f42a2efbdf38dc2ef1a52ff6b51b98e038b19
+    # https://github.com/rancher/rke2/releases/download/v1.26.1%2Brke2r1/rke2.linux-s390x
+    linux-s390x: sha256:39718345ec1e0e611e5bdf2890bed4a7958db60e2ba9c15036b0a9e4c902e946
