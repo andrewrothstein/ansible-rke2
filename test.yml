@@ -1,9 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.rke2
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: /usr/local/bin/rke2 --version
-    register: rke2_test_output
-  - debug:
-      msg: '{{ rke2_test_output.stdout }}'
+    - name: Executing 'rke2 version'
+      ansible.builtin.command: /usr/local/bin/rke2 --version
+      changed_when: false
+      register: rke2_test_output
+    - name: Output from 'rke2 version'
+      ansible.builtin.debug:
+        msg: '{{ rke2_test_output.stdout }}'

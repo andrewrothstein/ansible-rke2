@@ -51,8 +51,8 @@ dl_ver () {
     local ver=$1
     printf "  '%s':\n" $ver
     ripchecksum $ver linux amd64
+    ripchecksum $ver linux arm64
     ripchecksum $ver windows amd64 .exe
-    ripchecksum $ver linux s390x
 }
 
-dl_ver ${1:-v1.26.1+rke2r1}
+dl_ver ${1:-v1.29.4+rke2r1}
