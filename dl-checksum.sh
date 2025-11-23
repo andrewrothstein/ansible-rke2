@@ -55,4 +55,4 @@ dl_ver () {
     ripchecksum $ver windows amd64 .exe
 }
 
-dl_ver ${1:-v1.29.4+rke2r1}
+dl_ver ${1:-v1.34.2+rke2r1}
